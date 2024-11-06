@@ -26,18 +26,23 @@ public class ListaTarea {
         return null;
     }
 
+    public boolean completar(String palabra) {
+        Tarea tarea = buscar(palabra);
+
+        if (tarea != null) {
+            tarea.setTerminado(true);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public int getSize() {
         return size;
     }
 
     @Override
     public String toString() {
-        /*String salida = "Hay " + size + " tareas:\n";
-
-        for (int i = 0; i < size; i++) {
-            salida += tareas[i] + "\n";
-        }*/
-
         StringBuilder salida = new StringBuilder();
 
         for (int i = 0; i < size; i++) {
