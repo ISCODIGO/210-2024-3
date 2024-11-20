@@ -30,11 +30,11 @@ public class CanvasController {
 
     private void drawCircle(double x, double y) {
         gc.setFill(Color.RED);
-        gc.fillOval(x - 25, y - 25, 50, 50);
+        gc.fillOval(x, y, 50, 50);
     }
 
     private void drawRectangle(double x, double y) {
         gc.setFill(Color.BLUE);
-        gc.fillRect(x - 25, y - 25, 50, 50);
+        gc.fillRect(x, y, 50, 50);
     }
 }
