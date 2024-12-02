@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx2d.Controller"
+      spacing="10" alignment="CENTER">
+    <Canvas fx:id="canvas" width="500" height="500" />
+    <Button text="Dibujar Rectángulo" onAction="#dibujarRectangulo"/>
+    <Button text="Dibujar Elipse" onAction="#dibujarElipse"/>
+    <Button text="Dibujar Línea" onAction="#dibujarLinea"/>
+    <Button text="Dibujar Polígono" onAction="#dibujarPoligono"/>
+    <Button text="Dibujar Texto" onAction="#dibujarTexto"/>
+    <Button text="Borrar Todo" onAction="#borrarTodo"/>
+</VBox>
