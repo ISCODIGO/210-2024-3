@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane prefHeight="330.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.MenuController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="382.0" prefWidth="436.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="Canvas" onAction="#changeToCanvas" />
+            <Button mnemonicParsing="false" text="Event" onAction="#changeToEvent" />
+            <Button mnemonicParsing="false" text="Layout" onAction="#changeToLayout" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
