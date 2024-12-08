@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafxwordle.GameController">
+   <top>
+      <Label text="WORDLE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <GridPane alignment="CENTER" prefHeight="150.0" vgap="5.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="Q">
+                      <font>
+                      <Font name="System Bold" size="14.0" />
+                  </font>
+                  </Button>
+                   <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="W">
+                       <font>
+                       <Font name="System Bold" size="14.0" />
+                   </font></Button>
+                   <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="E">
+                       <font>
+                       <Font name="System Bold" size="14.0" />
+                   </font></Button>
+                   <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="R">
+                       <font>
+                       <Font name="System Bold" size="14.0" />
+                   </font></Button>
+                   <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="T">
+                       <font>
+                       <Font name="System Bold" size="14.0" />
+                   </font></Button>
+                   <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="Y">
+                       <font>
+                       <Font name="System Bold" size="14.0" />
+                   </font></Button>
+                   <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="U">
+                       <font>
+                       <Font name="System Bold" size="14.0" />
+                   </font></Button>
+                   <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="I">
+                       <font>
+                       <Font name="System Bold" size="14.0" />
+                   </font></Button>
+                   <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="O">
+                       <font>
+                       <Font name="System Bold" size="14.0" />
+                   </font></Button>
+                   <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="P">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.rowIndex="1">
+                <children>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="A">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                    </Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="S">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="D">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="F">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="G">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="H">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="J">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="K">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="L">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.rowIndex="2">
+                <children>
+                    <Button mnemonicParsing="false" onAction="#enterClick" prefHeight="50" prefWidth="55" text="ENTER">
+                        <font>
+                            <Font name="System Bold" size="10.0" />
+                        </font>
+                    </Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="Z">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="X">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="C">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="V">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="B">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="N">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#keyClick" prefHeight="50" prefWidth="35" text="M">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font></Button>
+                    <Button mnemonicParsing="false" onAction="#backClick" prefHeight="50" prefWidth="55" text="BACK">
+                        <font>
+                            <Font name="System Bold" size="10.0" />
+                        </font></Button>
+                </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </bottom>
+   <center>
+      <GridPane fx:id="tablero" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</BorderPane>
